@@ -1,3 +1,4 @@
 "use strict";
 
-alert('lol');
+console.log('activated');
+document.querySelector('body').style.backgroundColor = 'black';
