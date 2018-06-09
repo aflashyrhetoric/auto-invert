@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "AutoInvert",
+  "description": "Attempts to invert browser page colors automatically",
+  "version": "0.0.1",
+  "icons": { "16": "ai16.png",
+           "48": "ai48.png",
+          "128": "ai128.png" },
+  "permissions": [
+    "storage", "webNavigation", "tabs",
+    "http://*/*", 
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "off.png",
+    "default_title": "Toggle Messenger's night mode."
+    },
+  "content_scripts": [
+  {
+    "matches": ["http://*/*  ", "https://*/*"],
+    "js": [
+      "driver.js"
+    ]
+  }
+  ],
+  "web_accessible_resources" : [
+    // "nightmode.css"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}
