@@ -1,12 +1,11 @@
-"use strict";
-var toggle;
+let toggle;
 
 chrome.storage.sync.get("activated", function(obj){
   toggle = obj.activated;
   console.log(toggle);
 }); 
 
-var toggleOnOff = function(tab){
+let toggleOnOff = function(tab){
   toggle = !toggle;
   if (toggle) { 
     // Change Icon
