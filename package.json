@@ -1,0 +1,19 @@
+{
+  "name": "auto-invert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aflashyrhetoric/auto-invert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aflashyrhetoric/auto-invert/issues"
+  },
+  "homepage": "https://github.com/aflashyrhetoric/auto-invert#readme"
+}
