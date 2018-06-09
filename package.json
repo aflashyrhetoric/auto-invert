@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aflashyrhetoric/auto-invert/issues"
   },
-  "homepage": "https://github.com/aflashyrhetoric/auto-invert#readme"
+  "homepage": "https://github.com/aflashyrhetoric/auto-invert#readme",
+  "dependencies": {
+    "src": "^1.1.2"
+  }
 }

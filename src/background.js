@@ -11,12 +11,15 @@ let toggleOnOff = function(tab){
     // Change Icon
     chrome.browserAction.setIcon({path: "on.png", tabId: tab.id});
     // Apply Script + CSS
-    chrome.tabs.executeScript(tab.id, {file: "night.js"});
+    // chrome.tabs.executeScript(tab.id, {file: "night.js"});
+    import('./night.js').then((nightScript) =>{
+      chrome.tabs.executeScript(tab.id, {code: nightScript});
+    })
   } else {
     // Change Icon
     chrome.browserAction.setIcon({path: "off.png", tabId: tab.id});
     // Apply Script + CSS
-    chrome.tabs.executeScript(tab.id, {file: "day.js"});
+    // chrome.tabs.executeScript(tab.id, {file: "day.js"});
   }
 };
 
